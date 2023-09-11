@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+}
+h1{
+    text-align:justify;
+}
+.imagen {
+    border-radius: 50%;
+    width: 100px;
+}
+  
