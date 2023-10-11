@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(/Practica/2.jpg);
+    background-size: cover;
+    z-index: 1;
+  }
+
+form {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  input,
+  textarea {
+    background-color: white;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+  }
+  
+  .campo {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .boton {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  input {
+    padding: 5px;
+    margin: 5px;
+
+  }
+img{
+    width: 150px;
+    height: 150px;
+}
