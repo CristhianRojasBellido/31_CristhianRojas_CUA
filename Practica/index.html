@@ -3,32 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Practica/style.css">
+    <link rel="stylesheet" href="/Practica/form.css">
+    <title>Mundo Ecologico</title>
 </head>
 <body>
+    <header>
+        <a href="#">🛒Venta de Producto🛒</a>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Tienda</a>
+          <a href="#">Productos</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="hero">
+          <div class="hero-txt">
+            <h1>Mundo Ecologico
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </h1>
+          </div>
+        </section>
+        <h2 class="title-c">Venta comunes</h2>
+        <section class="contenedor">
+          <!-- Contenedor de elementos -->
+          
+          <div class="contenedor-items">
+              <div class="item">
+                  <span class="titulo-item">Laptop</span>
+                  <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D" alt="" class="img-item">
+                  <span class="precio-item">$150</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+ 
+              <div class="item">
+                  <span class="titulo-item">Celular</span>
+                  <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2VsdWxhcnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="img-item">
+                  <span class="precio-item">$45</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+              <div class="item">
+                  <span class="titulo-item">Play Station 5</span>
+                  <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHM1fGVufDB8fDB8fHww" alt="" class="img-item">
+                  <span class="precio-item">$420</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+              <div class="item">
+                  <span class="titulo-item">XBox</span>
+                  <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8eGJveHxlbnwwfHwwfHx8MA%3D%3D" alt="" class="img-item">
+                  <span class="precio-item">$400</span>
+                  <button class="boton-item">Agregar al Carrito</button>
+              </div>
+          </div>
+          <!-- Carrito de Compras -->
+          <div class="carrito" id="carrito">
+              <div class="header-carrito">
+                  <h2>Tu Carrito</h2>
+              </div>
+  
+              <div class="carrito-items">
+                 
+              </div>
+              <div class="carrito-total">
+                  <div class="fila">
+                      <strong>Tu Total</strong>
+                      <span class="carrito-precio-total">
+                          $120.000,00
+                      </span>
+                  </div>
+                  <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+              </div>
+          </div>
+      </section>
+      <script src="/Practica/app.js" async></script>
+        <form action="" class="formulario">
+          <h1 class="formulario__titulo">Contáctenos</h1>
 
-    <form>
-        <h2>Bienvenidos</h2>
-        <input type="radio" id="analisis" name="opciones" value="analisis">
-        <label for="">Analisis de Sistemas</label>   
-        <input type="radio" id="produccion" name="opciones" value="produccion">
-        <label for="">Produccion agraria</label>
-        <img src="/Practica/Logo-VG_Tpt02.png" alt="Mi logo" class="logo">
-        <input type="text" placeholder="Nombre Completo" >
-        <input type="text" placeholder="Apellidos" >
-        <input type="number" placeholder="Edad" >
-        <input type="email" placeholder="Correo" >
-        <input type="password" placeholder="Contraseña">
-   
-        <a href="/politica-privacidad">¿Olvidó su contraseña?</a>
-        <label for="aceptar_politica_privacidad">Aceptar la política de privacidad</label>
-        <input type="checkbox" id="aceptar_politica_privacidad">
-        
-        
-        
-      <input type="submit" value="Registrarme" class="boton">
-    </form>
-    
+          <input type="text"   id="nombre" name="nombre" pattern="^[a-zA-Z]+$" title="Por favor, ingrese solo letras" class="formulario__input">
+          <label for="" class="formulario__label">Nombres</label>
+
+          <input type="text" id="email" name="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" title="Por favor, ingrese una dirección de correo electrónico válida" class="formulario__input">
+          <label for="" class="formulario__label">Correo</label>
+
+          <input type="text" id="dni" name="dni" pattern=".{8,8}" title="Ingrese 8 caracteres" class="formulario__input">
+          <label for="" class="formulario__label">Numero de Dni</label>
+
+          <input type="date" id="birthdate" name="birthdate" class="formulario__input">
+          <label for="birthdate" class="formulario__label"></label>
+
+          <input type="text"  class="formulario__input">
+          <label for="" class="formulario__label">Codigo postal </label>
+
+          <input type="text" id="comment" name="comment" maxlength="100" required class="formulario__input">
+          <label for="comment"  class="formulario__label">Comentario </label>
+
+          <input type="submit"  class="formulario__submit">
+        </form>  
+      <br>
+      <footer>
+        <a href="#">🛒Venta de Producto🛒</a>
+        <div class="redes">
+          <h3>Revisa nuestras redes para mas Compras 🛒</h3>
+          <ul>
+            <li>FB</li>
+            <li>IG</li>
+            <li>TW</li>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>
