@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CrishtianRojas</title>
+    <link rel="stylesheet" href="/Portafolio/Asset/css/style.css">
+    <link rel="stylesheet" href="/Portafolio/Asset/css/expereciencia.css">
+    <link rel="stylesheet" href="/Portafolio/Asset/css/aprendizaje.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cristhian Rojas</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">APRENDIZAJES</a></li>
+                    <li><a href="#Expe" onclick="seleccionar()">ACADEMIA</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/Portafolio/Asset/Img/per.png" alt="">
+            </div>
+            <h1>Cristhian Rojas</h1>
+            <h2>Alumno - Instituto Valle Grande</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100058899364607"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/cristhian-manuel-rojas-bellido-569658270/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Cristhian Rojas.</span> Soy un alumno del Instituto Valle Grande la cual me estoy preparando para saber màs acerca de todos las programaciones necesarias y asi ir aprendiendo poco a poco.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            27-10-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            917 129 045
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cristhian.rojas@vallegrande.edu.pe
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            La Encañada, San Vicente
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Mis Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Aprendizajes</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Programaciòn</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Interes</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Experiencia -->
+    <section id="Expe" class="Expe">
+        <div class="contenido-seccion">
+            <h2>Experiencia Academica</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Programaciòn Orientada a Objetos (POO)</h4>
+                        <span class="casa">Valle Grande</span>
+                        <span class="fecha"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Sistesma Operativos y Virtualizaciòn (SVO)</h4>
+                        <span class="casa">Valle Grande</span>
+                        <span class="fecha"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Base de Datos (BD)</h4>
+                        <span class="casa">Valle Grande</span>
+                        <span class="fecha"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Cultura Artistica (CUA)</h4>
+                        <span class="casa">Valle Grande</span>
+                        <span class="fecha"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Fundamentos de Investigaciòn (FUI)</h4>
+                        <span class="casa">Valle Grande</span>
+                        <span class="fecha"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Organizaciòn de Empresas II (OE2)</h4>
+                        <span class="casa">Valle Grande</span>
+                        <span class="fecha"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/Portafolio/Asset/Img/venta.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina de Venta</h3>
+                        <p>Una pequeña pagina de ventas de frutas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/Portafolio/Asset/Img/pag.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina</h3>
+                        <p>Primera pagina creada con nacvar</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/Portafolio/Asset/Img/eco.png" alt="">
+                    <div class="overlay">
+                        <h3>Mundo Ecologico</h3>
+                        <p>Creacion de una pagina con tienditas y formulario</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/Portafolio/Asset/Img/banners.png" alt="">
+                    <div class="overlay">
+                        <h3>Banner</h3>
+                        <p>nuestro primer banner creado con photoshop</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/Portafolio/Asset/Img/form.png" alt="">
+                    <div class="overlay">
+                        <h3>Formulario</h3>
+                        <p>Nuestro primer formulario creado con restrinciones con js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <form id="contactForm" action="tu_script_de_procesamiento.php" method="post">
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" name="nombre" placeholder="Tú Nombre" required minlength="2" maxlength="50">
+                        <input type="tel" name="telefono" placeholder="Número telefónico">
+                        <input type="email" name="correo" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema" required minlength="2" maxlength="50">
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required minlength="10" maxlength="500"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <script src="/Portafolio/Asset/js/formulario.js"></script>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100058899364607"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/cristhian-manuel-rojas-bellido-569658270/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="/Portafolio/Asset/js/scrip.js"></script>
+</body>
+</html>
